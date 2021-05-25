@@ -201,10 +201,18 @@ const pathOurServices = {
     ]
 }
 
-const pathServiceText = {
+let pathServiceText = {
     values: [
         {y: window.innerHeight * -.80}
     ]
+}
+
+if (window.innerWidth < 1030) {
+    pathServiceText = {
+        values: [
+            {y: window.innerHeight * -1}
+        ]
+    }
 }
 
 const tweenOurServices = new TimelineLite();
