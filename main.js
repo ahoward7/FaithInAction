@@ -49,10 +49,18 @@ const pathOurMission = {
     ]
 }
 
-const pathMissionText = {
+let pathMissionText = {
     values: [
         {x: window.innerWidth * -.66, y: 0}
     ]
+}
+
+if (window.innerWidth < 1030) {
+    pathMissionText = {
+        values: [
+            {x: window.innerWidth * -.8, y: 0}
+        ]
+    }
 }
 
 const tweenOurMission = new TimelineLite();
@@ -125,10 +133,18 @@ const pathOurVision = {
     ]
 }
 
-const pathVisionText = {
+let pathVisionText = {
     values: [
         {x: window.innerWidth * .66, y: 0}
     ]
+}
+
+if (window.innerWidth < 1030) {
+    pathVisionText = {
+        values: [
+            {x: window.innerWidth * .8, y: 0}
+        ]
+    }
 }
 
 const tweenOurVision = new TimelineLite();
