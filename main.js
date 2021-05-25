@@ -207,7 +207,7 @@ let pathServiceText = {
     ]
 }
 
-if (window.innerWidth < 1120) {
+if (window.innerWidth < 600) {
     pathServiceText = {
         values: [
             {y: window.innerHeight * -1}
