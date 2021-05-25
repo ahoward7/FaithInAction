@@ -55,7 +55,7 @@ let pathMissionText = {
     ]
 }
 
-if (window.innerWidth < 1030) {
+if (window.innerWidth < 1120) {
     pathMissionText = {
         values: [
             {x: window.innerWidth * -.8, y: 0}
@@ -139,7 +139,7 @@ let pathVisionText = {
     ]
 }
 
-if (window.innerWidth < 1030) {
+if (window.innerWidth < 1120) {
     pathVisionText = {
         values: [
             {x: window.innerWidth * .8, y: 0}
@@ -207,7 +207,7 @@ let pathServiceText = {
     ]
 }
 
-if (window.innerWidth < 1030) {
+if (window.innerWidth < 1120) {
     pathServiceText = {
         values: [
             {y: window.innerHeight * -1}

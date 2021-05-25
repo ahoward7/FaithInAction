@@ -438,7 +438,7 @@ nav {
     }
 }
 
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 1120px) {
     .mission {
         margin-top: 43px;
     }
@@ -488,7 +488,7 @@ nav {
     }
 }
 
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 1120px) {
     .vision {
         margin-top: 43px;
     }
