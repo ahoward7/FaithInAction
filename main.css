@@ -32,6 +32,20 @@ a {
     transition: none !important;
 }
 
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+::-webkit-scrollbar-track {
+    background-color: var(--fia-black);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--fia-orange);
+    border-radius: 10px;
+    border: solid var(--fia-black) 3px;
+}
+
 /**************************************************************************************************************************************************************************/
 /*************************************************************************** Header ***************************************************************************************/
 /**************************************************************************************************************************************************************************/
@@ -55,7 +69,7 @@ header {
     font-family: 'Architects Daughter', cursive;
 }
 
-.about-us-text {
+.header-text {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -105,6 +119,33 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
+}
+
+.back-to-top {
+    width: 50px;
+    height: 50px;
+    position: sticky;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: var(--fia-black);
+    font-size: 25px;
+    z-index: 10;
+    transition: background-color .3s;
+}
+
+.back-to-top:hover {
+    color: var(--fia-orange);
+    background-color: var(--fia-blue);
+    cursor: pointer;
+}
+
+.fa-arrow-up {
+    font-size: 100px;
+    color: var(--fia-orange);
 }
 
 @media screen and (max-width: 900px) {
@@ -572,7 +613,7 @@ nav {
     align-items: center;
     justify-content: center;
     background-color: var(--fia-black);
-    color: white;
+    color: var(--fia-grey);
     transition: color .3s, background-color .3s;
     cursor: pointer;
 }
@@ -617,6 +658,85 @@ nav {
 }
 
 /**************************************************************************************************************************************************************************/
+/*************************************************************************** Volunteer ************************************************************************************/
+/**************************************************************************************************************************************************************************/
+
+.volunteer-donate {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--fia-orange);
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.volunteer-container, .donate-container {
+    height: 100vh;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.volunteer-container {
+    left: -50%;
+}
+
+.donate-container {
+    right: -50%;
+}
+
+.volunteer-text, .donate-text {
+    color: var(--fia-black);
+    font-size: 5vw;
+    text-align: center;
+    margin: 10vh;
+}
+
+.volunteer-body, .donate-body {
+    width: 70%;
+    height: 50%;
+    position: relative;
+    border-radius: 3vw;
+    padding: 2vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--fia-black);
+    background-color: var(--fia-grey);
+}
+
+.vol-don-button {
+    width: 50%;
+    position: absolute;
+    bottom: 30%;
+    padding: 1em;
+    margin-top: 10vh;
+    border-radius: 2vw;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--fia-black);
+    color: var(--fia-grey);
+    transition: color .3s, background-color .3s;
+    cursor: pointer;
+}
+
+.vol-don-button:hover {
+    background-color: var(--fia-blue);
+    color: var(--fia-orange);
+}
+
+@media screen and (max-width: 900px) {
+    .vol-don-button {
+        width: 75%;
+    }
+}
+
+/**************************************************************************************************************************************************************************/
 /*************************************************************************** Footer ***************************************************************************************/
 /**************************************************************************************************************************************************************************/
 
@@ -624,4 +744,25 @@ footer {
     height: 60vh;
     width: 100%;
     background-color: var(--fia-black);
+    position: relative;
+}
+
+.footer-nav {
+    height: 100%;
+    width: 150px;
+    position: absolute;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav .nav-item {
+    border: none;
+    margin: auto 5%;
+    background-color: var(--fia-black);
+    color: var(--fia-grey);
+}
+
+.footer-nav .nav-item:hover {
+    color: var(--fia-orange);
 }

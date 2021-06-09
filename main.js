@@ -22,6 +22,7 @@ window.addEventListener("resize", function(event) {
 var size = this.window.innerWidth / 2000 * 5;
 $(".our-mission, .our-vision, .our-services").css("font-size", 10 - size + "vw");
 $(".mission-text, .vision-text, .service-list").css("font-size", (10 - size) * .5 + "vw");
+$(".volunteer-body, .donate-body").css("font-size", (10 - size) * .3 + "vw");
 
 if (aspectRatio > .56 && aspectRatio < .57 && this.screen.width < 1800) {
     $(".mission-text").css({
@@ -193,7 +194,7 @@ const sceneVisionPin = new ScrollMagic.Scene({
 /************************************************************************* Services ***************************************************************************************/
 /**************************************************************************************************************************************************************************/
 
-/***************************************************************** Scroll magic for vision statement **********************************************************************/
+/***************************************************************** Scroll magic for services ******************************************************************************/
 
 const pathOurServices = {
     values: [
@@ -266,6 +267,66 @@ const sceneServicesPin = new ScrollMagic.Scene({
 .addTo(serviceController);
 
 /**************************************************************************************************************************************************************************/
+/***************************************************************** Volunteer/Donate ***************************************************************************************/
+/**************************************************************************************************************************************************************************/
+
+/************************************************************* Scroll magic for volunteer/donate **************************************************************************/
+
+const pathVolunteer = {
+    values: [
+        {x: window.innerWidth * .5}
+    ]
+}
+
+const pathDonate = {
+    values: [
+        {x: window.innerWidth * -.5}
+    ]
+}
+
+const tweenVolunteer = new TimelineLite();
+tweenVolunteer.add(
+    TweenLite.to('.volunteer-container', 1, {
+        bezier: pathVolunteer,
+        ease: Power1.easeInOut
+    })
+)
+
+const tweenDonate = new TimelineLite();
+tweenDonate.add(
+    TweenLite.to('.donate-container', 1, {
+        bezier: pathDonate,
+        ease: Power1.easeInOut
+    })
+)
+
+const volDonController = new ScrollMagic.Controller();
+
+const sceneVolunteer = new ScrollMagic.Scene({
+    triggerElement: '.volunteer-donate',
+    duration: 800,
+    triggerHook: .5,
+})
+.setTween(tweenVolunteer)
+.addTo(volDonController);
+
+const sceneDonate = new ScrollMagic.Scene({
+    triggerElement: '.volunteer-donate',
+    duration: 800,
+    triggerHook: .5,
+})
+.setTween(tweenDonate)
+.addTo(volDonController);
+
+const sceneVolDonPin = new ScrollMagic.Scene({
+    triggerElement: '.volunteer-donate',
+    duration: 700,
+    triggerHook: 0,
+})
+.setPin('.volunteer-donate')
+.addTo(volDonController);
+
+/**************************************************************************************************************************************************************************/
 /******************************************************************** Startup Function ************************************************************************************/
 /**************************************************************************************************************************************************************************/
 
@@ -283,6 +344,13 @@ function startup() {
         "mouseleave": function() {
             $(".need-help-menu").hide();
             $(".volunteer").css("margin-top", "0px");
+        }
+    });
+
+    $(".back-to-top").on({
+        "click": function() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
         }
     });
 }
