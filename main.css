@@ -711,9 +711,8 @@ nav {
 .vol-don-button {
     width: 50%;
     position: absolute;
-    bottom: 30%;
-    padding: 1em;
-    margin-top: 10vh;
+    bottom: 22%;
+    padding: .8em;
     border-radius: 2vw;
     font-size: 1.2em;
     display: flex;
