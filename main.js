@@ -267,13 +267,13 @@ function resizePage() {
     if (window.innerWidth < 1200) {
         pathOurServices = {
             values: [
-                {y: window.innerHeight * .35}
+                {y: window.innerHeight * .25}
             ]
         }
 
         pathServiceText = {
             values: [
-                {y: window.innerHeight * -.7}
+                {y: window.innerHeight * -.8}
             ]
         }
     }
