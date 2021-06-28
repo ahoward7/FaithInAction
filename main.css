@@ -768,6 +768,9 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+    .footer-nav {
+        width: 50%;
+    }
     .footer-nav .nav-item {
         font-size: 15px;
     }
