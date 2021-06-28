@@ -252,7 +252,7 @@ function resizePage() {
 
     /***************************************************************** Scroll magic for services ******************************************************************************/
 
-    const pathOurServices = {
+    let pathOurServices = {
         values: [
             {y: window.innerHeight * .15}
         ]
@@ -264,25 +264,19 @@ function resizePage() {
         ]
     }
 
-    if (window.innerWidth < 600) {
-        
-    }
-
     if (window.innerWidth < 1200) {
+        pathOurServices = {
+            values: [
+                {y: window.innerHeight * .30}
+            ]
+        }
+
         pathServiceText = {
             values: [
-                {y: window.innerHeight * -.9}
+                {y: window.innerHeight * -.8}
             ]
         }
     }
-
-    // if (window.innerWidth < 600) {
-    //     pathServiceText = {
-    //         values: [
-    //             {y: window.innerHeight * -1}
-    //         ]
-    //     }
-    // }
 
     const tweenOurServices = new TimelineLite();
     tweenOurServices.add(
