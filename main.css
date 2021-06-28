@@ -760,8 +760,15 @@ footer {
     margin: auto 5%;
     background-color: var(--fia-black);
     color: var(--fia-grey);
+    font-size: large;
 }
 
 .footer-nav .nav-item:hover {
     color: var(--fia-orange);
+}
+
+@media screen and (max-width: 600px) {
+    .footer-nav .nav-item {
+        font-size: 15px;
+    }
 }
