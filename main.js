@@ -254,29 +254,29 @@ function resizePage() {
 
     let pathOurServices = {
         values: [
-            {y: window.innerHeight * .15}
+            {x: window.innerWidth / 2 + window.innerWidth * .59 / 2}
         ]
     }
 
     let pathServiceText = {
         values: [
-            {y: window.innerHeight * -.80}
+            {x: window.innerWidth / -2 - window.innerWidth * .7 / 2}
         ]
     }
 
-    if (window.innerWidth < 1200) {
-        pathOurServices = {
-            values: [
-                {y: window.innerHeight * .25}
-            ]
-        }
+    // if (window.innerWidth < 1200) {
+    //     pathOurServices = {
+    //         values: [
+    //             {y: window.innerHeight * .25}
+    //         ]
+    //     }
 
-        pathServiceText = {
-            values: [
-                {y: window.innerHeight * -.8}
-            ]
-        }
-    }
+    //     pathServiceText = {
+    //         values: [
+    //             {y: window.innerHeight * -.8}
+    //         ]
+    //     }
+    // }
 
     const tweenOurServices = new TimelineLite();
     tweenOurServices.add(
