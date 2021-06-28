@@ -264,20 +264,6 @@ function resizePage() {
         ]
     }
 
-    // if (window.innerWidth < 1200) {
-    //     pathOurServices = {
-    //         values: [
-    //             {y: window.innerHeight * .25}
-    //         ]
-    //     }
-
-    //     pathServiceText = {
-    //         values: [
-    //             {y: window.innerHeight * -.8}
-    //         ]
-    //     }
-    // }
-
     const tweenOurServices = new TimelineLite();
     tweenOurServices.add(
         TweenLite.to('.our-services', 1, {
