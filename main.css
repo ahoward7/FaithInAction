@@ -65,16 +65,35 @@ header {
 	background-image: url("Pictures/faith-in-sand.jpg");
 }
 
-.header-about {
-    font-family: 'Architects Daughter', cursive;
-}
-
 .header-text {
     position: absolute;
-    top: 40%;
+    top: 15vh;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     font-size: 8vw;
+}
+
+.text {
+    font-size: 22px;
+    color: var(--fia-black);
+}
+
+.text-right {
+    font-size: 22px;
+    text-align: right;
+    display: block;
+    color: var(--fia-black);
+}
+
+.just-text {
+    font-size: 22px;
+    text-align: justify;
+    display: block;
+    color: var(--fia-black);
+}
+
+h1 {
+    color: var(--fia-black);
 }
 
 .blur {
@@ -133,7 +152,6 @@ header {
     border-radius: 50%;
     background-color: var(--fia-black);
     font-size: 25px;
-    z-index: 10;
     transition: background-color .3s;
 }
 

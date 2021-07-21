@@ -1,0 +1,97 @@
+:root {
+    --fia-orange: #DDA13B;
+    --fia-black: #212121;
+    --fia-brown: #5c3b0b;
+    --fia-blue: darkblue;
+    --fia-grey: lightgrey;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+/**************************************************************************************************************************************************************************/
+/************************************************************************* About us ***************************************************************************************/
+/**************************************************************************************************************************************************************************/
+
+.header-about {
+    font-family: 'Architects Daughter', cursive;
+}
+
+.about-head {
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+    text-align: center;
+}
+
+.about-body {
+    height: 70vh;
+}
+
+.about-mission {
+    margin-top: 5vh;
+}
+
+.about-contact {
+    text-align: center;
+}
+
+.home-nav {
+    padding: 0;
+}
+
+.history-txt, .mission-txt, .contact {
+    padding: .7em;
+    border-radius: 2vw;
+    border: 5px solid var(--fia-orange);
+    box-sizing: border-box;
+}
+
+.contact {
+    border: 5px solid var(--fia-blue);
+    border-left: none;
+    border-right: none;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-col {
+    width: 90%;
+    margin: auto 0;
+}
+
+.contact-txt {
+    width: 10%;
+    display: flex;
+}
+
+.contact-input {
+    width: 100%;
+    padding: .2em;
+    text-indent: 8px;
+    border-radius: 1vw;
+    border: 2px solid var(--fia-black);
+    font-size: 20px;
+    background-color: var(--fia-grey);
+}
+
+.about-message {
+    height: 15vh;
+    padding: .5em;
+    border: 2px solid var(--fia-black);
+    text-indent: 0;
+}
+
+.about-message::-webkit-scrollbar {
+    display: none;
+}
+
+.about-message {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
