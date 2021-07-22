@@ -12,6 +12,7 @@ body {
     text-decoration: none;
     position: absolute;
     z-index: -9999999;
+    background-color: var(--fia-black);
 }
 
 a {
@@ -468,6 +469,7 @@ nav {
     height: 100vh;
     position: relative;
     overflow: hidden;
+    background-color: white;
 }
 
 .our-mission {
@@ -755,7 +757,7 @@ nav {
 /**************************************************************************************************************************************************************************/
 
 footer {
-    height: 60vh;
+    height: fit-content;
     width: 100%;
     background-color: var(--fia-black);
     position: relative;
@@ -764,21 +766,76 @@ footer {
 .footer-nav {
     height: 100%;
     width: 200px;
-    position: absolute;
-    left: 0;
     display: flex;
     flex-direction: column;
+    margin-left: 10vw;
+    margin-top: 4.2vh;
 }
 
 .footer-nav .nav-item {
     border: none;
-    margin: auto 5%;
     background-color: var(--fia-black);
     color: var(--fia-grey);
-    font-size: large;
+    font-size: 22px;
 }
 
 .footer-nav .nav-item:hover {
+    color: var(--fia-orange);
+}
+
+.affs-txt, .info-txt {
+    margin: 4.2vh;
+    text-align: center;
+    color: white;
+}
+
+.aff-container {
+    display: flex;
+    justify-content: center;
+}
+
+.aff {
+    width: 9.8vw;
+    height: 9.8vw;
+    background-image: url("Pictures/man-placeholder.jpg");
+    background-size: cover;
+	background-repeat: no-repeat;
+    margin-bottom: 1vw;
+}
+
+.info-item-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-item {
+    margin-bottom: 2vh;
+    margin-left: 6vw;
+}
+
+.fa-facebook {
+    color: white;
+}
+
+.fa-facebook:hover {
+    color: white;
+}
+
+.facebook {
+    width: 40px;
+    height: 40px;
+    margin: 5vh 0 13vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    background-color: blue;
+    text-align: center;
+    cursor: pointer;
+}
+
+.info-item {
+    font-size: 22px;
     color: var(--fia-orange);
 }
 
