@@ -71,4 +71,9 @@ function resizePage () {
     + parseInt($(".about-mission").css("height")) + parseInt($(".about-mission").css("margin-bottom")) + parseInt($(".about-mission").css("margin-top"));
 
     $(".contact").css("height", contactHeight);
+
+    if (window.innerWidth < 768) {
+        $(".contact").css("height", "500px");
+        $(".contact").css("height", "500px");
+    }
 }

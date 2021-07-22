@@ -13,7 +13,6 @@ input:focus, textarea:focus, select:focus{
 /**************************************************************************************************************************************************************************/
 /************************************************************************* About us ***************************************************************************************/
 /**************************************************************************************************************************************************************************/
-
 .header-about {
     font-family: 'Architects Daughter', cursive;
 }
@@ -28,15 +27,23 @@ input:focus, textarea:focus, select:focus{
 }
 
 .about-body {
-    height: 70vh;
+    height: fit-content;
+    margin-bottom: 10vh;
 }
 
-.about-mission {
+.about-mission, .about-team {
     margin-top: 5vh;
 }
 
 .about-contact {
     text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .about-contact {
+        margin-top: 5vh;
+        text-align: left;
+    }
 }
 
 .home-nav {
@@ -94,4 +101,4 @@ input:focus, textarea:focus, select:focus{
 .about-message {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
-  }
+}
