@@ -850,6 +850,10 @@ footer {
     color: var(--fia-orange);
 }
 
+.info-small {
+    font-size: 15px;
+}
+
 @media screen and (max-width: 767px) {
     .footer-nav-container {
         justify-content: center;
