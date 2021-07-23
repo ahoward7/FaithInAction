@@ -83,7 +83,7 @@
                 <div class="col-12 col-md-4 offset-md-1 about-contact">
                     <h1>Contact Us</h1>
 
-                    <form class="contact" action="https://formsubmit.co/avery.d.howard@gmail.com" method="POST">
+                    <form id="contact-form" class="contact" action="https://formsubmit.co/avery.d.howard@gmail.com" method="POST">
                         <div class="contact-col">
                             <span class="contact-txt">Name*</span>
                             <input type="text" name="name" class="contact-input" required>
@@ -102,12 +102,14 @@
                         </div>
                         <div class="contact-col">
                             <span class="contact-txt">Message*</span>
-                            <input form="contact" name="message" class="contact-input about-message" required></input>
+                            <input type="text" name="message" class="contact-input about-message" required></input>
                         </div>
                         <div class="contact-col">
                             <button type="submit">Send</button>
                         </div>
                    </form>
+
+                   <textarea form="contact-form" name="text-message" cols="35" wrap="soft"></textarea>
                         
                 </div>
             </div>
