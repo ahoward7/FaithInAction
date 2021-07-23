@@ -168,6 +168,7 @@ input:focus, textarea:focus, select:focus{
 .service-pic-container {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .service-pic {
@@ -176,7 +177,7 @@ input:focus, textarea:focus, select:focus{
 }
 
 .shopping {
-    width: calc((12vw + 12vh) * 1.5);
+    width: calc(12vw + 12vh);
     height: calc(12vw + 12vh);
     border-radius: 2vw;
     background-image: url("Pictures/shopping.jpg");
@@ -223,4 +224,11 @@ input:focus, textarea:focus, select:focus{
     height: calc(12vw + 12vh);
     border-radius: 2vw;
     background-image: url("Pictures/housekeep.jpg");
+}
+
+.service-statement {
+    padding: .7em;
+    border-radius: 2vw;
+    border: 5px solid var(--fia-orange);
+    box-sizing: border-box;
 }
