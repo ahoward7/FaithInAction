@@ -762,6 +762,10 @@ footer {
     position: relative;
 }
 
+.footer-nav-container {
+    display: flex;
+}
+
 .footer-nav {
     height: fit-content;
     width: 200px;

@@ -49,12 +49,6 @@ function startup() {
             document.documentElement.scrollTop = 0;
         }
     });
-
-    // $(".facebook").on({
-    //     "click": function() {
-    //         window.open("https://www.facebook.com/fiasteuben/", "_blank")
-    //     }
-    // });
 }
 
 window.addEventListener("resize", function(event) {
@@ -367,4 +361,10 @@ function resizePage() {
     })
     .setPin('.volunteer-donate')
     .addTo(volDonController);
+
+    $(".footer-nav-container").css("justify-content", "left");
+
+    if (window.innerWidth < 768) {
+        $(".footer-nav-container").css("justify-content", "center");
+    }
 }
