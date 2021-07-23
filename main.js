@@ -50,11 +50,11 @@ function startup() {
         }
     });
 
-    $(".facebook").on({
-        "click": function() {
-            window.open("https://www.facebook.com/fiasteuben/", "_blank")
-        }
-    });
+    // $(".facebook").on({
+    //     "click": function() {
+    //         window.open("https://www.facebook.com/fiasteuben/", "_blank")
+    //     }
+    // });
 }
 
 window.addEventListener("resize", function(event) {
