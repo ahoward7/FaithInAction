@@ -17,7 +17,7 @@ input:focus, textarea:focus, select:focus{
     font-family: 'Architects Daughter', cursive;
 }
 
-.about-head {
+.page-head {
     height: 10vw;
     display: flex;
     align-items: center;
@@ -138,4 +138,89 @@ input:focus, textarea:focus, select:focus{
 
 .about-team {
     margin-bottom: 5vh;
+}
+
+/**************************************************************************************************************************************************************************/
+/************************************************************************* Services ***************************************************************************************/
+/**************************************************************************************************************************************************************************/
+
+.services-1 {
+    height: fit-content;
+}
+
+.service {
+    margin: 10vh 0;
+}
+
+.service:first-child {
+    margin-top: 5vh;
+}
+
+.service-title {
+    font-weight: bold;
+    color: var(--fia-orange);
+}
+
+.fa-circle {
+    margin: 20px 20px 0 20px
+}
+
+.service-pic-container {
+    display: flex;
+    justify-content: center;
+}
+
+.service-pic {
+    background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.shopping {
+    width: calc((12vw + 12vh) * 1.5);
+    height: calc(12vw + 12vh);
+    border-radius: 2vw;
+    background-image: url("Pictures/shopping.jpg");
+}
+
+.car {
+    width: calc((12vw + 12vh) * 1.5);
+    height: calc(12vw + 12vh);
+    background-image: url("Pictures/car.jpg");
+}
+
+.handyman {
+    width: calc(12vw + 12vh);
+    height: calc(12vw + 12vh);
+    background-image: url("Pictures/handyman.jpg");
+}
+
+.yardwork {
+    width: calc(12vw + 12vh);
+    height: calc(12vw + 12vh);
+    background-image: url("Pictures/yardwork.jpg");
+}
+
+.visit {
+    width: calc(12vw + 12vh);
+    height: calc(12vw + 12vh);
+    background-image: url("Pictures/visit.jpg");
+}
+
+.homecare {
+    width: calc((12vw + 12vh) * 1.5);
+    height: calc(12vw + 12vh);
+    background-image: url("Pictures/homecare.jpg");
+}
+
+.phone {
+    width: calc(12vw + 12vh);
+    height: calc(12vw + 12vh);
+    background-image: url("Pictures/phone.jpg");
+}
+
+.housekeep {
+    width: calc((12vw + 12vh) * 1.5);
+    height: calc(12vw + 12vh);
+    border-radius: 2vw;
+    background-image: url("Pictures/housekeep.jpg");
 }
