@@ -26,7 +26,7 @@
         
         <header class="container header-about" style="max-width: 100%;">
             <span class="header-text">About Us</span>
-            <div class="blur"></div>
+            <div class="blur about-blur"></div>
             <a class="logo-container" href="home.html">
                 <div class="fia-logo"></div>
                 <div class="fia-text"></div>
@@ -83,28 +83,32 @@
                 <div class="col-12 col-md-4 offset-md-1 about-contact">
                     <h1>Contact Us</h1>
 
-                    <div class="contact">
+                    <form class="contact" action="https://formsubmit.co/avery.d.howard@gmail.com" method="POST">
                         <div class="contact-col">
-                            <span class="contact-txt">Name</span>
-                            <input type="text" class="contact-input">
+                            <span class="contact-txt">Name*</span>
+                            <input type="text" name="name" class="contact-input" required>
                         </div>
                         <div class="contact-col">
-                            <span class="contact-txt">Email</span>
-                            <input type="text" class="contact-input">
+                            <span class="contact-txt">Email*</span>
+                            <input type="email" name="email" class="contact-input" required>
                         </div>
                         <div class="contact-col">
                             <span class="contact-txt">Phone</span>
                             <input type="text" class="contact-input">
                         </div>
                         <div class="contact-col">
-                            <span class="contact-txt">Subject</span>
-                            <input type="text" class="contact-input">
+                            <span class="contact-txt">Subject*</span>
+                            <input type="text" name="_subject" class="contact-input" required>
                         </div>
                         <div class="contact-col">
-                            <span class="contact-txt">Message</span>
-                            <textarea class="contact-input about-message"></textarea>
+                            <span class="contact-txt">Message*</span>
+                            <textarea form="contact" class="contact-input about-message" required></textarea>
                         </div>
-                    </div>
+                        <div class="contact-col">
+                            <button type="submit">Send</button>
+                        </div>
+                   </form>
+                        
                 </div>
             </div>
         </div>
