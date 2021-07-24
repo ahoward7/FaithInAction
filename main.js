@@ -52,7 +52,10 @@ function startup() {
 }
 
 window.addEventListener("resize", function(event) {
-    if (window.innerWidth > 450) {
+    if( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        // some code..
+    }
+    else {
         resizePage();
     }
 })
