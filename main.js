@@ -57,12 +57,9 @@ window.addEventListener("resize", function(event) {
     if($(this).width() != width){
         resizePage();
     }
-})
 
-$(window).on('touchmove', function () {
-    // adjust heights basing on window.innerHeight
-    // $(window).height() will not return correct value before resizing is done
-});
+    width = $(window).width();
+})
 
 /**************************************************************************************************************************************************************************/
 /******************************************************************* Mission Statement ************************************************************************************/
