@@ -310,16 +310,30 @@ function resizePage() {
 
     /************************************************************* Scroll magic for volunteer/donate **************************************************************************/
 
-    const pathVolunteer = {
+    let pathVolunteer = {
         values: [
             {x: window.innerWidth * .5}
         ]
     }
 
-    const pathDonate = {
+    let pathDonate = {
         values: [
             {x: window.innerWidth * -.5}
         ]
+    }
+
+    if (window.innerWidth < 900) {
+        pathVolunteer = {
+            values: [
+                {x: window.innerWidth / 2 + window.innerWidth * .1 / 2}
+            ]
+        }
+    
+        pathDonate = {
+            values: [
+                {x: window.innerWidth / -2 - window.innerWidth * .1 / 2}
+            ]
+        }
     }
 
     const tweenVolunteer = new TimelineLite();

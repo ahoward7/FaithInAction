@@ -690,7 +690,7 @@ nav {
 
 .volunteer-container, .donate-container {
     height: 100vh;
-    width: 50%;
+    width: 50vw;
     position: absolute;
     top: 0;
     display: flex;
@@ -699,11 +699,11 @@ nav {
 }
 
 .volunteer-container {
-    left: -50%;
+    left: -50vw;
 }
 
 .donate-container {
-    right: -50%;
+    right: -50vw;
 }
 
 .volunteer-text, .donate-text {
@@ -714,7 +714,7 @@ nav {
 }
 
 .volunteer-body, .donate-body {
-    width: 70%;
+    width: 34vw;
     height: 50%;
     position: relative;
     border-radius: 3vw;
@@ -727,7 +727,7 @@ nav {
 }
 
 .vol-don-button {
-    width: 50%;
+    width: 58%;
     position: absolute;
     bottom: 22%;
     padding: .8em;
@@ -748,8 +748,23 @@ nav {
 }
 
 @media screen and (max-width: 900px) {
+    .volunteer-container {
+        left: -50vw;
+    }
+
+    .donate-container {
+        right: -50vw;
+        top: 42vh;
+    }
+
+    .volunteer-body, .donate-body {
+        height: 30vh;
+        margin-top: -8vh;
+    }
+
     .vol-don-button {
         width: 75%;
+        transform: translateY(3vh);
     }
 }
 
