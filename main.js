@@ -53,12 +53,20 @@ function startup() {
 
 window.addEventListener("resize", function(event) {
     if( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        // some code..
+        var width = $(window).width();
+        if($(this).width() != width){
+            resizePage();
+        }
     }
     else {
         resizePage();
     }
 })
+
+$(window).on('touchmove', function () {
+    // adjust heights basing on window.innerHeight
+    // $(window).height() will not return correct value before resizing is done
+});
 
 /**************************************************************************************************************************************************************************/
 /******************************************************************* Mission Statement ************************************************************************************/
