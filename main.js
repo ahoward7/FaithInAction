@@ -51,14 +51,10 @@ function startup() {
     });
 }
 
+
+var width = $(window).width();
 window.addEventListener("resize", function(event) {
-    if( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        var width = $(window).width();
-        if($(this).width() != width){
-            resizePage();
-        }
-    }
-    else {
+    if($(this).width() != width){
         resizePage();
     }
 })
