@@ -149,7 +149,7 @@ function resizePage() {
     let sceneOurMission = new ScrollMagic.Scene({
         triggerElement: '.mission',
         duration: 800,
-        triggerHook: .5,
+        triggerHook: 1,
     })
     .setTween(tweenOurMission)
     .addTo(missionController);
@@ -157,14 +157,14 @@ function resizePage() {
     let sceneMissionText = new ScrollMagic.Scene({
         triggerElement: '.mission',
         duration: 600,
-        triggerHook: 0,
+        triggerHook: .5,
     })
     .setTween(tweenMissionText)
     .addTo(missionController);
 
     let sceneMissionPin = new ScrollMagic.Scene({
         triggerElement: '.mission',
-        duration: 850,
+        duration: 400,
         triggerHook: 0,
     })
     .setPin('.mission')
@@ -231,7 +231,7 @@ function resizePage() {
     const sceneOurVision = new ScrollMagic.Scene({
         triggerElement: '.vision',
         duration: 800,
-        triggerHook: .5,
+        triggerHook: 1,
     })
     .setTween(tweenOurVision)
     .addTo(visionController);
@@ -239,14 +239,14 @@ function resizePage() {
     const sceneVisionText = new ScrollMagic.Scene({
         triggerElement: '.vision',
         duration: 600,
-        triggerHook: 0,
+        triggerHook: .5,
     })
     .setTween(tweenVisionText)
     .addTo(visionController);
 
     const sceneVisionPin = new ScrollMagic.Scene({
         triggerElement: '.vision',
-        duration: 850,
+        duration: 400,
         triggerHook: 0,
     })
     .setPin('.vision')
@@ -289,22 +289,22 @@ function resizePage() {
     const sceneOurServices = new ScrollMagic.Scene({
         triggerElement: '.services',
         duration: 800,
-        triggerHook: .5,
+        triggerHook: .8,
     })
     .setTween(tweenOurServices)
     .addTo(serviceController);
 
     const sceneServiceText = new ScrollMagic.Scene({
         triggerElement: '.services',
-        duration: 600,
-        triggerHook: 0,
+        duration: 800,
+        triggerHook: .5,
     })
     .setTween(tweenServiceText)
     .addTo(serviceController);
 
     const sceneServicesPin = new ScrollMagic.Scene({
         triggerElement: '.services',
-        duration: 850,
+        duration: 400,
         triggerHook: 0,
     })
     .setPin('.services')
@@ -360,23 +360,23 @@ function resizePage() {
 
     const sceneVolunteer = new ScrollMagic.Scene({
         triggerElement: '.volunteer-donate',
-        duration: 800,
-        triggerHook: .5,
+        duration: 1000,
+        triggerHook: 1,
     })
     .setTween(tweenVolunteer)
     .addTo(volDonController);
 
     const sceneDonate = new ScrollMagic.Scene({
         triggerElement: '.volunteer-donate',
-        duration: 800,
-        triggerHook: .5,
+        duration: 1000,
+        triggerHook: 1,
     })
     .setTween(tweenDonate)
     .addTo(volDonController);
 
     const sceneVolDonPin = new ScrollMagic.Scene({
         triggerElement: '.volunteer-donate',
-        duration: 700,
+        duration: 300,
         triggerHook: 0,
     })
     .setPin('.volunteer-donate')
