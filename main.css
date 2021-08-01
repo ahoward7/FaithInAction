@@ -240,27 +240,10 @@ nav {
     display: none;
 }
 
-.nav-item:hover, .menu-item:hover {
+.nav-item:hover /*, .menu-item:hover */ {
     cursor: pointer;
     color: var(--fia-orange);
     background-color: var(--fia-black);
-}
-
-.dropdown-menu {
-    width: fit-content;
-    height: fit-content;
-    position: absolute;
-    transform: translate(-12px, 10px);
-    display: none;
-    flex-direction: column;
-    background-color: var(--fia-orange);
-    color: var(--fia-black);
-    z-index: 2;
-}
-
-.menu-item {
-    padding: .3em;
-    transition: color .3s, background-color .3s;
 }
 
 .donate {
@@ -274,10 +257,6 @@ nav {
 @media screen and (max-width: 1142px) {
     .nav-item {
         padding: .2em;
-    }
-    
-    .dropdown-menu {
-        transform: translate(-7px, 4px);
     }
 }
 
@@ -383,15 +362,6 @@ nav {
     
     .nav-item:last-child {
         border-right: none;
-    }
-
-    .dropdown-menu {
-        transform: translate(-12px, 10px);
-    }
-
-    .menu-item {
-        font-size: 15px;
-        text-indent: 12px;
     }
 
     .donate-btn {

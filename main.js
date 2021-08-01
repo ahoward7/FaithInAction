@@ -27,22 +27,6 @@ function startup() {
 
     resizePage();
 
-    $(".need-help").on({
-        "click": function() {
-            $(".need-help-menu").css({
-                "display": "flex"
-            });
-
-            if ($(window).width() < 1006) {
-                $(".volunteer").css("margin-top", "55px");
-            }
-        },
-        "mouseleave": function() {
-            $(".need-help-menu").hide();
-            $(".volunteer").css("margin-top", "0px");
-        }
-    });
-
     $(".back-to-top").on({
         "click": function() {
             document.body.scrollTop = 0;
