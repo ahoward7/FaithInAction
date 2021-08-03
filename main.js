@@ -27,6 +27,8 @@ function startup() {
 
     resizePage();
 
+    $('.dropdown-toggle').dropdown()
+
     $(".back-to-top").on({
         "click": function() {
             document.body.scrollTop = 0;
@@ -34,7 +36,6 @@ function startup() {
         }
     });
 }
-
 
 var width = $(window).width();
 window.addEventListener("resize", function(event) {

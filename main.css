@@ -212,6 +212,42 @@ nav {
     background-color: var(--fia-orange);
 }
 
+.btn {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    border: none;
+    outline: none;
+    border-left: solid var(--fia-black) 1px;
+    border-right: solid var(--fia-black) 1px;
+    background-color: var(--fia-orange);
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--fia-black);
+}
+
+.btn:hover, .btn-secondary:active:focus, .btn-secondary:focus {
+    color: var(--fia-black);
+    background-color: var(--fia-orange);
+    border: none;
+    box-shadow: none;
+    border-left: solid var(--fia-black) 1px;
+    border-right: solid var(--fia-black) 1px;
+    transition: color .3s, background-color .3s;
+}
+
+.dropdown-menu {
+    padding: 0;
+    background-color: var(--fia-orange);
+    transition: color .3s, background-color .3s;
+    font-size: 20px;
+    border-radius: 0;
+}
+
+.dropdown-item {
+    transition: color .3s, background-color .3s;
+}
+
 .nav-item {
     padding: .5em;
     border-left: solid var(--fia-black) 1px;
@@ -221,6 +257,10 @@ nav {
     color: var(--fia-black);
     background-color: var(--fia-orange);
     transition: color .3s, background-color .3s;
+}
+
+.dropdown {
+    padding: none;
 }
 
 .nav-item:first-child {
@@ -240,7 +280,7 @@ nav {
     display: none;
 }
 
-.nav-item:hover /*, .menu-item:hover */ {
+.nav-item:hover , .btn:hover, .dropdown-item:hover {
     cursor: pointer;
     color: var(--fia-orange);
     background-color: var(--fia-black);
@@ -254,13 +294,29 @@ nav {
     color: white;
 }
 
-@media screen and (max-width: 1142px) {
-    .nav-item {
+.about-foot {
+    color: white;
+}
+
+.about-foot:hover {
+    color: var(--fia-orange);
+}
+
+.about-foot:active:focus, .about-foot:focus{
+    color: white;
+    background-color: var(--fia-black);
+}
+
+@media screen and (max-width: 1172px) {
+    .nav-item, .btn {
         padding: .2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
-@media screen and (max-width: 1022px) {
+@media screen and (max-width: 1042px) {
     .home-nav {
         width: 0;
         height: 100vh;
@@ -342,14 +398,15 @@ nav {
         margin-top: 8px;
     }
 
-    .nav-item {
+    .nav-item, .btn {
         border: none;
         padding: .59em;
         color: var(--fia-orange);
         background-color: var(--fia-black);
+        transition: color .3s, background-color .3s;
     }
 
-    .nav-item:hover {
+    .nav-item:hover, .btn:hover {
         cursor: pointer;
         background-color: var(--fia-orange);
         color: var(--fia-black);
@@ -366,6 +423,16 @@ nav {
 
     .donate-btn {
         display: none;
+    }
+
+    .btn-secondary:active:focus, .btn-secondary:focus {
+        color: var(--fia-orange);
+        background-color: var(--fia-black);
+    }
+
+    .btn:hover {
+        background-color: var(--fia-orange);
+        color: var(--fia-black);
     }
 }
 
@@ -409,7 +476,7 @@ nav {
     left: -3%;
 }
 
-@media screen and (max-width: 1022px) {
+@media screen and (max-width: 1042px) {
     .slogan {
         margin-top: 43px;
         font-size: 5vw;
@@ -762,15 +829,19 @@ footer {
     margin-top: 2vh;
 }
 
-.footer-nav .nav-item {
+.footer-nav .nav-item, .about-foot{
     border: none;
     background-color: var(--fia-black);
     color: var(--fia-grey);
     font-size: 22px;
 }
 
-.footer-nav .nav-item:hover {
+.footer-nav .nav-item:hover, .about-foot:hover {
     color: var(--fia-orange);
+}
+
+.about-foot {
+    text-align: left;
 }
 
 .footer-affs {

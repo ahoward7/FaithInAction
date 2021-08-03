@@ -58,80 +58,90 @@
             About Faith in Action Steuben County
         </div>
 
-        <div class="container about-1">
-            <div class="row">
-                <div class="col-12 col-md-7 his-mis">
-                    <h1>Our History</h1>
-                    <div class="text history-txt">Faith in Action Steuben was founded in Hornell, NY in 1995. At first, we were serving in the towns of Hornell, Arkport, and
-                        Canisteo, but we began expanding to western Steuben in 2003. After a few more years, in 2007, we were reaching eastern Steuben as well.
-                        Starting with only 3 zip codes in 1995, we currently serve in 28 zip codes which covers most of Steuben County.
+        <div id="list-example" class="list-group">
+            <a class="list-group-item list-group-item-action" href="#scroll-history">History</a>
+            <a class="list-group-item list-group-item-action" href="#scroll-mission">Mission</a>
+            <a class="list-group-item list-group-item-action" href="#scroll-team">Meet The Team</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+          </div>
+        <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+            <div class="container about-1">
+                <div class="row">
+                    <div class="col-12 col-md-7 his-mis">
+                        <h1 id="scroll-history">Our History</h1>
+                        <div class="text history-txt">Faith in Action Steuben was founded in Hornell, NY in 1995. At first, we were serving in the towns of Hornell, Arkport, and
+                            Canisteo, but we began expanding to western Steuben in 2003. After a few more years, in 2007, we were reaching eastern Steuben as well.
+                            Starting with only 3 zip codes in 1995, we currently serve in 28 zip codes which covers most of Steuben County.
+                        </div>
+    
+                        <h1 class="about-mission" id="scroll-mission">Mission Statement</h1>
+                        <div class="text mission-txt">
+                            "Faith in Action Steuben County is a coalition of congregations, civic groups, and individuals working together to serve older 
+                            adults in need a little assistance to continue living independently. This support is provided at no charge to the recipient by caring 
+                            volunteers, selflessly giving their time and compassion to others."
+                        </div>
                     </div>
-
-                    <h1 class="about-mission">Mission Statement</h1>
-                    <div class="text mission-txt">
-                        "Faith in Action Steuben County is a coalition of congregations, civic groups, and individuals working together to serve older 
-                        adults in need a little assistance to continue living independently. This support is provided at no charge to the recipient by caring 
-                        volunteers, selflessly giving their time and compassion to others."
+    
+                    <div class="col-12 col-md-4 offset-md-1 about-contact">
+                        <h1>Contact Us</h1>
+    
+                        <form id="contact-form" class="contact" action="https://formsubmit.co/avery.d.howard@gmail.com" method="POST">
+                            <div class="contact-col">
+                                <span class="contact-txt">Name*</span>
+                                <input type="text" name="Name" class="contact-input" required>
+                            </div>
+                            <div class="contact-col">
+                                <span class="contact-txt">Email*</span>
+                                <input type="email" name="Email" class="contact-input" required>
+                            </div>
+                            <div class="contact-col">
+                                <span class="contact-txt">Phone</span>
+                                <input type="text" name="Phone" class="contact-input">
+                            </div>
+                            <div class="contact-col">
+                                <span class="contact-txt">Subject*</span>
+                                <input type="text" name="_subject" class="contact-input" required>
+                            </div>
+                            <div class="contact-col">
+                                <span class="contact-txt">Message*</span>
+                                <textarea class="contact-input about-message" form="contact-form" name="Message" cols="35" wrap="soft" required></textarea>
+                            </div>
+                            <div class="contact-col">
+                                <button class="send-btn contact-input" type="submit">Send</button>
+                            </div>
+                       </form>
                     </div>
                 </div>
-
-                <div class="col-12 col-md-4 offset-md-1 about-contact">
-                    <h1>Contact Us</h1>
-
-                    <form id="contact-form" class="contact" action="https://formsubmit.co/avery.d.howard@gmail.com" method="POST">
-                        <div class="contact-col">
-                            <span class="contact-txt">Name*</span>
-                            <input type="text" name="Name" class="contact-input" required>
+            </div>
+    
+            <div class="container about-2">
+                <h1 class="about-team" id="scroll-team">Meet the Team</h1>
+    
+                <div class="row">
+                    <div class="col-12 col-md-4 offset-md-1 order-1 order-md-1 team-holder">
+                        <div class="team-1"></div>
+                    </div>
+                    <div class="col-12 col-md-4 offset-md-2 order-3 order-md-2 team-holder">
+                        <div class="team-2"></div>
+                    </div>
+    
+                    <div class="w-100 d-none d-md-block"></div>
+    
+                    <div class="col-10 offset-1 col-md-6 offset-md-0 order-2 order-md-3">
+                        <div class="text about-team">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde ullam sunt ipsum blanditiis adipisci at libero repellat, magnam nostrum saepe laborum, fugiat assumenda similique magni consectetur a! Ratione, repellat natus.
                         </div>
-                        <div class="contact-col">
-                            <span class="contact-txt">Email*</span>
-                            <input type="email" name="Email" class="contact-input" required>
+                    </div>
+                    <div class="col-10 offset-1 col-md-6 offset-md-0 order-4 order-md-4">
+                        <div class="text about-team">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam nam, corporis qui pariatur cum natus voluptas amet ipsa blanditiis, temporibus explicabo ducimus. Minima dolore maxime placeat laborum omnis nihil laboriosam.
                         </div>
-                        <div class="contact-col">
-                            <span class="contact-txt">Phone</span>
-                            <input type="text" name="Phone" class="contact-input">
-                        </div>
-                        <div class="contact-col">
-                            <span class="contact-txt">Subject*</span>
-                            <input type="text" name="_subject" class="contact-input" required>
-                        </div>
-                        <div class="contact-col">
-                            <span class="contact-txt">Message*</span>
-                            <textarea class="contact-input about-message" form="contact-form" name="Message" cols="35" wrap="soft" required></textarea>
-                        </div>
-                        <div class="contact-col">
-                            <button class="send-btn contact-input" type="submit">Send</button>
-                        </div>
-                   </form>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="container about-2">
-            <h1 class="about-team">Meet the Team</h1>
-
-            <div class="row">
-                <div class="col-12 col-md-4 offset-md-1 order-1 order-md-1 team-holder">
-                    <div class="team-1"></div>
-                </div>
-                <div class="col-12 col-md-4 offset-md-2 order-3 order-md-2 team-holder">
-                    <div class="team-2"></div>
-                </div>
-
-                <div class="w-100 d-none d-md-block"></div>
-
-                <div class="col-10 offset-1 col-md-6 offset-md-0 order-2 order-md-3">
-                    <div class="text about-team">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde ullam sunt ipsum blanditiis adipisci at libero repellat, magnam nostrum saepe laborum, fugiat assumenda similique magni consectetur a! Ratione, repellat natus.
-                    </div>
-                </div>
-                <div class="col-10 offset-1 col-md-6 offset-md-0 order-4 order-md-4">
-                    <div class="text about-team">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam nam, corporis qui pariatur cum natus voluptas amet ipsa blanditiis, temporibus explicabo ducimus. Minima dolore maxime placeat laborum omnis nihil laboriosam.
-                    </div>
-                </div>
-            </div>
-        </div>
+        
 
         <footer class="container footer" style="max-width: 100%;">
             <div class="row">
