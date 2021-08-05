@@ -345,6 +345,12 @@ input:focus, textarea:focus, select:focus{
     text-align: center;
 }
 
+.sticky-contact {
+    position: sticky;
+    top: 2%;
+    margin-bottom: 7vh;
+}
+
 .contact-info, .contact-us {
     padding: .7em;
     margin-bottom: 7vh;
@@ -370,4 +376,11 @@ input:focus, textarea:focus, select:focus{
 
 h2 {
     color: var(--fia-orange);
+}
+
+@media screen and (max-width: 767px) {
+    .sticky-contact {
+        position: relative;
+        margin-bottom: -2vh;
+    }
 }
