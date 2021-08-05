@@ -20,6 +20,8 @@ window.addEventListener("resize", function(event) {
 function startup() {
 
     resizeAboutPage();
+    
+    $('.dropdown-toggle').dropdown()
 
     $(".need-help").on({
         "click": function() {
