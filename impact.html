@@ -43,7 +43,21 @@
 
         <nav class="home-nav">
             <a class="nav-item" href="home.html">Home</a>
-            <a class="nav-item" href="about.html">About Us</a>
+
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About Us
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="about.html">Overview</a>
+                    <a class="dropdown-item" href="about.html#scroll-history">History</a>
+                    <a class="dropdown-item" href="about.html#scroll-mission">Our Mission</a>
+                    <a class="dropdown-item" href="about.html#scroll-team">Our Team</a>
+                    <a class="dropdown-item" href="about.html#scroll-board">Board of Directors</a>
+                    <a class="dropdown-item" href="#">IRS Form 990</a>
+                </div>
+            </div>
+
             <a class="nav-item" href="impact.html">Our Impact</a>
             <a class="nav-item" href="services.html">Services</a>
             <a class="nav-item" href="help.html">Need Help?</a>
@@ -68,8 +82,10 @@
                     </div>
                 </div>
             </div>
-            <div class="row chart-container">
-                <div class="impact-chart"></div>
+            <div class="row">
+                <div class="col-12 chart-container">
+                    <div class="impact-chart"></div>
+                </div>
             </div>
         </div>
 
@@ -120,6 +136,6 @@
 
         <script src="https://kit.fontawesome.com/a9248b4c93.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="allButHome.js"></script>
+        <script src="allButHome.js" async defer></script>
     </body>
 </html>

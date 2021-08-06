@@ -27,7 +27,7 @@ function startup() {
 
     resizePage();
 
-    $('.dropdown-toggle').dropdown()
+    $('.dropdown-toggle').dropdown();
 
     $(".back-to-top").on({
         "click": function() {

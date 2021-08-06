@@ -25,8 +25,8 @@
         <![endif]-->
         
         <header class="container-fluid header-about">
-            <span class="header-text"></span>
-            <div class="blur"></div>
+            <span class="header-text">Resources</span>
+            <div class="blur blur-resources"></div>
             <a class="logo-container" href="home.html">
                 <div class="fia-logo"></div>
                 <div class="fia-text"></div>
@@ -43,7 +43,21 @@
 
         <nav class="home-nav">
             <a class="nav-item" href="home.html">Home</a>
-            <a class="nav-item" href="about.html">About Us</a>
+
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About Us
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="about.html">Overview</a>
+                    <a class="dropdown-item" href="about.html#scroll-history">History</a>
+                    <a class="dropdown-item" href="about.html#scroll-mission">Our Mission</a>
+                    <a class="dropdown-item" href="about.html#scroll-team">Our Team</a>
+                    <a class="dropdown-item" href="about.html#scroll-board">Board of Directors</a>
+                    <a class="dropdown-item" href="#">IRS Form 990</a>
+                </div>
+            </div>
+
             <a class="nav-item" href="impact.html">Our Impact</a>
             <a class="nav-item" href="services.html">Services</a>
             <a class="nav-item" href="help.html">Need Help?</a>
@@ -53,9 +67,65 @@
             <a class="nav-item" href="contact.html">Contact Us</a>
             <a class="nav-item donate-btn" href="donate.html">Donate</a>
         </nav>
+
+        <div class="container page-head" style="max-width: 100%; margin-bottom: 0;">
+            Other Resources
+        </div>
+
+        <footer class="container footer" style="max-width: 100%;">
+            <div class="row">
+                <div class="col-12 col-md-4 col-sm-6 footer-nav-container">
+                    <div class="footer-nav">
+                        <a class="nav-item" href="home.html">Home</a>
+                        <a class="nav-item" href="about.html">About Us</a>
+                        <a class="nav-item" href="impact.html">Our Impact</a>
+                        <a class="nav-item" href="services.html">Services</a>
+                        <div class="dropdown">
+                            <button class="about-foot btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                About Us
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="about.html">Overview</a>
+                                <a class="dropdown-item" href="about.html#scroll-history">History</a>
+                                <a class="dropdown-item" href="about.html#scroll-mission">Our Mission</a>
+                                <a class="dropdown-item" href="about.html#scroll-team">Our Team</a>
+                                <a class="dropdown-item" href="about.html#scroll-board">Board of Directors</a>
+                                <a class="dropdown-item" href="#">IRS Form 990</a>
+                            </div>
+                        </div>
+                        <a class="nav-item" href="volunteer.html">Volunteer</a>
+                        <a class="nav-item" href="testimonials.html">Testimonials</a>
+                        <a class="nav-item" href="resources.html">Resources</a>
+                        <a class="nav-item" href="contact.html">Contact Us</a>
+                        <a class="nav-item donate-btn" href="donate.html">Donate</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-sm-6 footer-affs">
+                    <div class="affs-container">
+                        <div class="aff aff-1"></div>
+                        <div class="aff aff-2"></div>
+                        <div class="aff aff-3"></div>
+                        <div class="aff aff-4"></div>
+                    </div>
+                </div>
+                <div class="col-10 col-md-4 offset-1 offset-md-0 footer-info">
+                    <div class="info-item-container">
+                        <div class="info-item">20 Broadway Mall, Hornell, NY 14843</div>
+                        <div class="info-item">(607) 324-1138</div>
+                        <div class="info-item">(607) 936-0941</div>
+                        <div class="info-item"></div>
+                        <a class="info-item facebook" href="https://www.facebook.com/fiasteuben/" target="_blank">
+                            <i  class="fa fa-facebook fa-2x"></i>
+                        </a>
+                        <div class="info-item info-small">Website created by Avery Howard</div>
+                        <div class="info-item info-small">© (year) Faith In Action Steuben County</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
         
         <script src="https://kit.fontawesome.com/a9248b4c93.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="allButHome.js"></script>
+        <script src="allButHome.js" async defer></script>
     </body>
 </html>
