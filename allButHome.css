@@ -447,6 +447,126 @@ input:focus, textarea:focus, select:focus{
     background-image: url("Pictures/resources.jpg");
 }
 
+.glide {
+    margin-bottom: 12vh;
+}
+
+.glide-slide {
+    width: 20vw;
+    padding-top: 20vw;
+    border-radius: 2vw;
+    border: 5px solid var(--fia-orange);
+    box-sizing: border-box;
+    background-image: url("Pictures/fia-color-tag.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.glide-slide:nth-child(2n) {
+    border: 5px solid var(--fia-blue);
+}
+
+.glide-arrows {
+    position: relative;
+}
+
+.glide-arrow {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 50%;
+    font-size: 40px;
+    color: white;
+    background-color: var(--fia-black);
+    cursor: pointer;
+}
+
+.glide-arrow-right {
+    right: 30%;
+}
+
+.glide-arrow-left {
+    left: 30%;
+}
+
+.glide-bullets {
+    width: 300px;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glide__bullet {
+    width: 25px;
+    height: 10px;
+    margin: 0 auto;
+    border: 3px var(--fia-black) solid;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1199px) {
+    .glide-arrow-left {
+        left: 25%
+    }
+    .glide-arrow-right {
+        right: 25%
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .glide-arrow {
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+    .glide-arrow-left {
+        left: 18%
+    }
+    .glide-arrow-right {
+        right: 18%
+    }
+    .glide-bullets {
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .glide-arrow-left {
+        left: 5%
+    }
+    .glide-arrow-right {
+        right: 5%
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .glide-bullets {
+        width: 200px;
+        height: 35px;
+    }
+
+    .glide__bullet {
+        width: 20px;
+        height: 6px;
+        margin: 0 auto;
+        border: 2px var(--fia-black) solid;
+    }
+
+    .glide-arrow {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+    }
+}
+
 /**************************************************************************************************************************************************************************/
 /************************************************************************ Contact Us **************************************************************************************/
 /**************************************************************************************************************************************************************************/

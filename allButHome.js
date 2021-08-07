@@ -23,6 +23,14 @@ function startup() {
     
     $('.dropdown-toggle').dropdown();
 
+    var glideMulti = new Glide('.glide', {
+        type: 'carousel',
+        perView: 3,
+        autoplay: 3000,
+    });
+
+    glideMulti.mount();
+
     $(".back-to-top").on({
         "click": function() {
             document.body.scrollTop = 0;
@@ -75,5 +83,62 @@ function resizeAboutPage () {
 
     if (window.innerWidth < 708) {
         $(".impact-statement").css("margin-top", "7vh");
+    }
+
+    $(".glide").remove();
+
+    $(".glider").append(`
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide glide-slide slide-1"></li>
+                    <li class="glide__slide glide-slide slide-2"></li>
+                    <li class="glide__slide glide-slide slide-3"></li>
+                    <li class="glide__slide glide-slide slide-4"></li>
+                    <li class="glide__slide glide-slide slide-5"></li>
+                    <li class="glide__slide glide-slide slide-6"></li>
+                    <li class="glide__slide glide-slide slide-7"></li>
+                    <li class="glide__slide glide-slide slide-8"></li>
+                </ul>
+            </div>
+
+            <div class="glide__arrows glide-arrows" data-glide-el="controls">
+                <div class="glide-arrow glide-arrow-left glide__arrow glide__arrow--left" data-glide-dir="<">
+                    <-
+                </div>
+                <div class="glide__bullets glide-bullets" data-glide-el="controls[nav]">
+                    <div class="glide__bullet" data-glide-dir="=0"></div>
+                    <div class="glide__bullet" data-glide-dir="=1"></div>
+                    <div class="glide__bullet" data-glide-dir="=2"></div>
+                    <div class="glide__bullet" data-glide-dir="=3"></div>
+                    <div class="glide__bullet" data-glide-dir="=4"></div>
+                    <div class="glide__bullet" data-glide-dir="=5"></div>
+                    <div class="glide__bullet" data-glide-dir="=6"></div>
+                    <div class="glide__bullet" data-glide-dir="=7"></div>
+                </div>
+                <div class="glide-arrow glide-arrow-right glide__arrow glide__arrow--right" data-glide-dir=">">
+                    ->
+                </div>
+            </div>
+        </div>
+    `)
+
+    if (window.innerWidth < 767) {
+        var glideMulti = new Glide('.glide', {
+            type: 'carousel',
+            perView: 2,
+            autoplay: 3000,
+        });
+    
+        glideMulti.mount();
+    }
+    else {
+        var glideMulti = new Glide('.glide', {
+            type: 'carousel',
+            perView: 3,
+            autoplay: 3000,
+        });
+    
+        glideMulti.mount();
     }
 }
