@@ -13,21 +13,20 @@ window.addEventListener("resize", function(event) {
     resizeAboutPage();
 })
 
-var path = window.location.pathname;
-var page = path.split("/").pop();
-
 /**************************************************************************************************************************************************************************/
 /******************************************************************** Startup Function ************************************************************************************/
 /**************************************************************************************************************************************************************************/
 
 function startup() {
 
+    var path = window.location.pathname;
+
     resizeAboutPage();
     
     $('.dropdown-toggle').dropdown();
 
 
-    if (page="resources.html") {
+    if (path=="/resources.html") {
         var glideMulti = new Glide('.glide', {
             type: 'carousel',
             perView: 3,
@@ -129,7 +128,9 @@ function resizeAboutPage () {
         </div>
     `)
 
-    if (page="resources.html") {
+    var path = window.location.pathname;
+
+    if (path=="/resources.html") {
         if (window.innerWidth < 767) {
             var glideMulti = new Glide('.glide', {
                 type: 'carousel',
