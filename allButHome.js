@@ -23,13 +23,18 @@ function startup() {
     
     $('.dropdown-toggle').dropdown();
 
-    var glideMulti = new Glide('.glide', {
-        type: 'carousel',
-        perView: 3,
-        autoplay: 3000,
-    });
+    var path = window.location.pathname;
+    var page = path.split("/").pop();
 
-    glideMulti.mount();
+    if (page="resources.html") {
+        var glideMulti = new Glide('.glide', {
+            type: 'carousel',
+            perView: 3,
+            autoplay: 3000,
+        });
+    
+        glideMulti.mount();
+    }
 
     $(".back-to-top").on({
         "click": function() {
