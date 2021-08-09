@@ -13,6 +13,9 @@ window.addEventListener("resize", function(event) {
     resizeAboutPage();
 })
 
+var path = window.location.pathname;
+var page = path.split("/").pop();
+
 /**************************************************************************************************************************************************************************/
 /******************************************************************** Startup Function ************************************************************************************/
 /**************************************************************************************************************************************************************************/
@@ -23,8 +26,6 @@ function startup() {
     
     $('.dropdown-toggle').dropdown();
 
-    var path = window.location.pathname;
-    var page = path.split("/").pop();
 
     if (page="resources.html") {
         var glideMulti = new Glide('.glide', {
@@ -128,22 +129,24 @@ function resizeAboutPage () {
         </div>
     `)
 
-    if (window.innerWidth < 767) {
-        var glideMulti = new Glide('.glide', {
-            type: 'carousel',
-            perView: 2,
-            autoplay: 3000,
-        });
-    
-        glideMulti.mount();
-    }
-    else {
-        var glideMulti = new Glide('.glide', {
-            type: 'carousel',
-            perView: 3,
-            autoplay: 3000,
-        });
-    
-        glideMulti.mount();
+    if (page="resources.html") {
+        if (window.innerWidth < 767) {
+            var glideMulti = new Glide('.glide', {
+                type: 'carousel',
+                perView: 2,
+                autoplay: 3000,
+            });
+        
+            glideMulti.mount();
+        }
+        else {
+            var glideMulti = new Glide('.glide', {
+                type: 'carousel',
+                perView: 3,
+                autoplay: 3000,
+            });
+        
+            glideMulti.mount();
+        }
     }
 }
