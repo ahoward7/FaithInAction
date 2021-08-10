@@ -14,6 +14,12 @@ input:focus, textarea:focus, select:focus{
     background-image: none;
 }
 
+@media screen and (max-width: 800px) {
+    .page-head {
+        margin-bottom: 10vh;
+    }
+}
+
 /**************************************************************************************************************************************************************************/
 /************************************************************************* About us ***************************************************************************************/
 /**************************************************************************************************************************************************************************/
@@ -321,9 +327,41 @@ input:focus, textarea:focus, select:focus{
 .iNeed-statement {
     padding: .7em;
     margin-bottom: 7vh;
+    margin-top: -4vh;
     border-radius: 2vw;
     border: 5px solid var(--fia-orange);
     box-sizing: border-box;
+}
+
+.iNeed-contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iNeed-contact {
+    padding: .8em;
+    border-radius: 2vw;
+    font-size: 2em;
+    margin-bottom: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--fia-black);
+    color: var(--fia-grey);
+    transition: color .3s, background-color .3s;
+    cursor: pointer;
+}
+
+.iNeed-contact:hover {
+    background-color: var(--fia-blue);
+    color: var(--fia-orange);
+}
+
+@media screen and (max-width: 767px) {
+    .iNeed-statement {
+        margin-top: 0;
+    }
 }
 
 /**************************************************************************************************************************************************************************/
@@ -438,6 +476,86 @@ input:focus, textarea:focus, select:focus{
     top: 3%;
     left: 65%;
     color: white;
+}
+
+.scheduler-text, .not-yet-text {
+    padding: .7em;
+    margin-bottom: 5vh;
+    border-radius: 2vw;
+    border: 5px var(--fia-orange) solid;
+    box-sizing: border-box;
+}
+
+.scheduler-link-container, .sign-up-container {
+    margin-bottom: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scheduler-link {
+    height: 150px;
+    width: 634px;
+    border-radius: 2vw;
+    border: 5px var(--fia-blue) solid;
+    background-image: url("Pictures/ride-scheduler-logo.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.volunteer-sign-up {
+    padding: .8em;
+    border-radius: 2vw;
+    font-size: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--fia-black);
+    color: var(--fia-grey);
+    transition: color .3s, background-color .3s;
+    cursor: pointer;
+}
+
+.volunteer-sign-up:hover {
+    background-color: var(--fia-blue);
+    color: var(--fia-orange);
+}
+
+@media screen and (max-width: 1399px) {
+    .scheduler-link {
+        height: 100px;
+        width: 423px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .scheduler-link {
+        height: 150px;
+        width: 634px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .scheduler-link {
+        height: 125px;
+        width: 528px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .scheduler-text {
+        font-size: 25px;
+    }
+    .scheduler-link {
+        height: calc(100vw * .2);
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .scheduler-text {
+        font-size: 20px;
+    }
 }
 
 /**************************************************************************************************************************************************************************/

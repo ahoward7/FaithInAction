@@ -55,13 +55,13 @@ function resizeAboutPage () {
 
     var size = this.window.innerWidth / 2000 * 5;
 
-    $(".about-head, .service-title").css("font-size", (10 - size) * .6 + "vw");
+    $(".about-head, .service-title, .scheduler-link").css("font-size", (10 - size) * .6 + "vw");
     $(".page-head").css("font-size", (10 - size) * .8 + "vw");
     $(".text, .text-right, .contact-col").css("font-size", "24px");
 
     if (window.innerWidth < 601) {
-        $(".about-head").css("font-size", "30px");
-        $(".about-head").css("margin-bottom", "30px");
+        $(".page-head").css("font-size", "40px");
+        $(".page-head").css("margin-bottom", "50px");
         $(".text, .text-right, .contact-col").css("font-size", "15px");
     }
 
