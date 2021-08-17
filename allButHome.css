@@ -163,6 +163,34 @@ input:focus, textarea:focus, select:focus{
     margin-bottom: 5vh;
 }
 
+.board-list {
+    display: flex;
+    flex-direction: row;
+    padding: .5em;
+    border-radius: 2vw;
+    border: 5px solid var(--fia-orange);
+    box-sizing: border-box;
+    margin-bottom: 5vh;
+}
+
+.board-name {
+    font-size: 30px;
+    padding: .5em;
+    text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+    .board-name {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .board-name {
+        text-align: left;
+    }
+}
+
 /**************************************************************************************************************************************************************************/
 /************************************************************************* Services ***************************************************************************************/
 /**************************************************************************************************************************************************************************/
