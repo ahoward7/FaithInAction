@@ -150,7 +150,7 @@ input:focus, textarea:focus, select:focus{
 }
 
 .team-2 {
-    background-image: url("Pictures/woman-placeholder.jpg");
+    background-image: url("Pictures/Angela.jpg");
 }
 
 .team-holder {
@@ -161,6 +161,7 @@ input:focus, textarea:focus, select:focus{
 
 .about-team {
     margin-bottom: 5vh;
+    padding: 1em;
 }
 
 .board-list {
@@ -412,11 +413,7 @@ input:focus, textarea:focus, select:focus{
 
 .testimonial {
     position: relative;
-    margin: 4vh 0;
-}
-
-.testimonial:last-child {
-    margin-bottom: 8vh;
+    margin: 3vh 0;
 }
 
 .test-text {

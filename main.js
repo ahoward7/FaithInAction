@@ -72,7 +72,7 @@ function resizePage() {
 
     var size = this.window.innerWidth / 2000 * 5;
     $(".our-mission, .our-vision, .our-services").css("font-size", 10 - size + "vw");
-    $(".mission-text, .vision-text, .service-list").css("font-size", (10 - size) * .5 + "vw");
+    $(".mission-text, .vision-text, .service-list").css("font-size", (9.5 - size) * .5 + "vw");
     $(".volunteer-body, .donate-body").css("font-size", (10 - size) * .4 + "vw");
 
     if (aspectRatio > .56 && aspectRatio < .57 && this.screen.width < 1800) {
@@ -81,6 +81,10 @@ function resizePage() {
             "right": "-65%",
             "width": "60%",
         });
+
+        $(".vol-don-button").css({
+            "bottom": "12%",
+        })
     }
 
     if (windowRatio < .5) {
