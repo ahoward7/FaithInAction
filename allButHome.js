@@ -42,6 +42,8 @@ function startup() {
             document.documentElement.scrollTop = 0;
         }
     });
+
+    input.addEventListener('paste', e => e.preventDefault());
 }
 
 /*********************************************************************************************************************************/

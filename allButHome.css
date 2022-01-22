@@ -423,7 +423,7 @@ input:focus, textarea:focus, select:focus{
     border-radius: 2vw;
     border: 5px var(--fia-orange) dotted;
     box-sizing: border-box;
-    font-family: 'Architects Daughter', cursive;
+    line-height: 50px;
     font-weight: bold;
     font-size: 30px;
 }
